@@ -118,6 +118,6 @@ app.delete("/delete/:id", (req, res) => {
   return res.status(200).json({ message: "data deleted" });
 });
 
-app.listen(port, "0.0.0.0", () => {
+app.listen(port, () => {
   console.log(`Server is listening on http://localhost:${port}`);
 });
