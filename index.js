@@ -76,7 +76,7 @@ app.post("/create", (req, res) => {
 });
 
 // Get API - Retrieve data by ID
-app.get("/allPost", (req, res) => {
+app.get("/all", (req, res) => {
   const data = readData();
 
   return res
@@ -118,6 +118,6 @@ app.delete("/delete/:id", (req, res) => {
   return res.status(200).json({ message: "data deleted" });
 });
 
-app.listen(port, () => {
+app.listen(port, "0.0.0.0", () => {
   console.log(`Server is listening on http://localhost:${port}`);
 });
