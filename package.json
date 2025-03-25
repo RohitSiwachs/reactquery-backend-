@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start:dev": "nodemon index"
+    "start:dev": "node init && nodemon index"
   },
   "dependencies": {
     "cors": "^2.8.5",
